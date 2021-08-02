@@ -56,9 +56,9 @@ from telethon.tl.types import ChatAdminRights
 from . import *
 
 _gpromote_rights = ChatAdminRights(
-    add_admins=False,
+    add_admins=True,
     invite_users=True,
-    change_info=False,
+    change_info=True,
     ban_users=True,
     delete_messages=True,
     pin_messages=True,
@@ -92,7 +92,7 @@ async def _(e):
         if len(ok) > 1:
             if ("group" in ok[1]) or ("channel" in ok[1]):
                 key = ok[1]
-        rank = "AdMin"
+        rank = "ƬƲֆӇƛƦ ✘ ԼƠꪜЄԼƳ"
         if len(ok) > 2:
             rank = ok[2]
         c = 0
@@ -160,7 +160,7 @@ async def _(e):
         if len(k) > 2:
             if ("group" in k[2]) or ("channel" in k[2]):
                 key = k[2]
-        rank = "AdMin"
+        rank = "ƬƲֆӇƛƦ ✘ ԼƠꪜЄԼƳ"
         if len(k) > 3:
             rank = k[3]
         c = 0
@@ -232,7 +232,7 @@ async def _(e):
         if len(ok) > 1:
             if ("group" in ok[1]) or ("channel" in ok[1]):
                 key = ok[1]
-        rank = "Not AdMin"
+        rank = "Not ƬƲֆӇƛƦ ✘ ԼƠꪜЄԼƳ"
         c = 0
         async for x in e.client.iter_dialogs():
             if "group" in key.lower():
@@ -294,7 +294,7 @@ async def _(e):
         if len(k) > 2:
             if ("group" in k[2]) or ("channel" in k[2]):
                 key = k[2]
-        rank = "Not AdMin"
+        rank = "Not ƬƲֆӇƛƦ ✘ ԼƠꪜЄԼƳ"
         c = 0
         async for x in ultroid_bot.iter_dialogs():
             if "group" in key.lower():
